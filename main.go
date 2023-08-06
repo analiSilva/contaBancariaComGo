@@ -13,9 +13,9 @@ func (c *ContaCorrente) Sacar(valorDoSaque float64) string {
 	podeSacar := valorDoSaque > 0 && valorDoSaque <= c.saldo
 	if podeSacar {
 		c.saldo -= valorDoSaque
-		return "Saque realizado com sucesso"
+		return "Saque realizado com sucesso."
 	} else {
-		return "Saldo insuficiente"
+		return "Saldo insuficiente."
 	}
 }
 
